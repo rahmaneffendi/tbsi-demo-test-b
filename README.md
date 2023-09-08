@@ -38,6 +38,10 @@ I simplify the deployment process on Kubernetes by employing Helm charts. Helm e
 
 In the Digital Ocean Kubernetes cluster, I have established Ingress controllers to manage external traffic routing to the backend services. The automatic acquisition of SSL certificates is ensured through Cert Manager, guaranteeing secure communication.
 
+## Domain Name By iDCloudHost
+
+I Buy the Domain name in IDCloudHost as Domain Provider
+
 ## Content Delivery Network (CDN) with Cloudflare
 
 Enhancing both performance and security, I have integrated Cloudflare as a Content Delivery Network (CDN). This addition accelerates content delivery by caching static assets and provides advanced security features. DNS records are configured to point to the Ingress controller, ensuring a seamless integration with Cloudflare.
