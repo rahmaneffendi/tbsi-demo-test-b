@@ -8,7 +8,14 @@ I have chosen Digital Ocean with Kubernetes as my hosting platform. This decisio
 
 ## Backend Application Development
 
-my backend applications are built using Node.js. The source code is hosted on GitHub, ensuring version control and collaboration. I have rigorously tested these applications locally using Docker to ensure their functionality and reliability.
+My backend applications are built using Node.js. The source code is hosted on GitHub, ensuring version control and collaboration. I have rigorously tested these applications locally using Docker to ensure their functionality and reliability.
+
+## Accessing Backend Services
+
+You can access the backend services as follows:
+
+- Backend A: [https://backend-a.slimebox.my.id/](https://backend-a.slimebox.my.id/)
+- Backend B: [https://backend-b.slimebox.my.id/](https://backend-b.slimebox.my.id/)
 
 ## CI/CD Workflow with GitHub Actions
 
@@ -37,14 +44,14 @@ Enhancing both performance and security, I have integrated Cloudflare as a Conte
 
 ## Project Structure
 
-my project structure is organized to facilitate clear and efficient development and maintenance. Here's an overview:
+My project structure is organized to facilitate clear and efficient development and maintenance. Here's an overview:
 
 ```
 - TBSI-DEMO-TEST-B/
   - .github/workflows/
     - cicd-tbsi-demotest.yml
     - test.yml
-  - tbsi-demo-test-a-chart/
+  - tbsi-demo-test-b-chart/
     - templates/
       - Chart.yml
       - values.yml
