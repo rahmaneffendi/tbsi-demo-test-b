@@ -2,7 +2,7 @@
   "name": "tbsi-demo-test",
   "version": "1.0.0",
   "description": "Test DevOps at Body Shop Indonesia",
-  "main": "backend-a.js",
+  "main": "backend-b.js",
   "scripts": {
     "test": "npx mocha --exit ./test/test_be-b.js"
   },

@@ -40,7 +40,7 @@ Enhancing both performance and security, I have integrated Cloudflare as a Conte
 my project structure is organized to facilitate clear and efficient development and maintenance. Here's an overview:
 
 ```
-- TBSI-DEMO-TEST-A/
+- TBSI-DEMO-TEST-B/
   - .github/workflows/
     - cicd-tbsi-demotest.yml
     - test.yml
@@ -49,11 +49,11 @@ my project structure is organized to facilitate clear and efficient development 
       - Chart.yml
       - values.yml
   - test/
-    - test_be-a.js/
+    - test_be-b.js/
   - .gitignore
-  - backend-a.js
+  - backend-b.js
   - docker-compose.yml
-  - Dockerfile-a
+  - Dockerfile-b
   - package-lock.json
   - package.json
   - Readme.md
