@@ -1,0 +1,46 @@
+appName: tbsi-demo-test-b-app
+
+image:
+  pullPolicy: Always
+  # pullSecret: docker-hub-private
+  repository: arahmane/backend-b:latest #modif from workflow
+
+hpa:
+  name: tbsi-demo-test-b-app
+  max: 3
+  min: 1
+  targetCPU: 60
+
+ingress:
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+  name: tbsi-demo-test-b-app
+  host: backend-b.slimebox.my.id
+
+namespace: tbsi
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 50Mi
+
+secret:
+  vmountName: tbsi-demo-test-b-app
+  vmountPath: /.env
+  volumeName: tbsi-demo-test-b-app
+  secretName: env-tbsi-demo-test-b
+
+restartPolicy: Always
+
+service: 
+  externalPort: 3002
+  internalPort: 3002
+  name: tbsi-demo-test-b-app
+  port: 3002
+  protocol: TCP
+  type: ClusterIP
+
+strategy:
+  surge: 1
+  type: RollingUpdate
+  unavailable: 25%
