@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3002
 
 # Start the application
-CMD ["node", "backend-a.js"]
+CMD ["node", "backend-b.js"]
